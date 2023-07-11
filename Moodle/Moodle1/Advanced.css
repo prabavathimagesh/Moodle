@@ -1,0 +1,16 @@
+    body{
+        background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/arvrbg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+.contents{
+    height: 100vh;
+}
+.color{
+    color: blueviolet;
+}
+.button{
+    background-color: blueviolet;
+}

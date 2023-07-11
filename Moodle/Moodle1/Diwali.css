@@ -1,0 +1,27 @@
+.cover_Img{
+    background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+.cover_Message {
+    padding-left: 20px;
+    padding-top: -30px;
+    width: 120px;
+    font-family: cursive;
+    margin-top: -180px;
+}
+
+section{
+    max-width: 100vw;
+    height: 30vh;
+
+}
+.view_Button{
+    margin-top: 600px;
+}
+@media screen and (max-width: 560px) {
+    .view_Button{
+        margin-top: 1400px;
+    }
+}

@@ -1,0 +1,18 @@
+body{
+    background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/hotelbg.png');
+    background-size: cover;
+}
+.content{
+    height: 100vh;
+}
+.color{
+    background-color: #000000e6;
+    font-family: Bree Serif;
+}
+.button{
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    background-color: #ffffff;
+    font-family: robota;
+}

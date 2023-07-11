@@ -1,0 +1,15 @@
+body{
+    background-color: aquamarine;
+}
+.background{
+    background-color:#fb4e71 ;
+}
+.para{
+    max-width: 130px;
+}
+@media all and (max-width:430px) {
+    
+      .media{
+        height:300px;
+    }
+}    

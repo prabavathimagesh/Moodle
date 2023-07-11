@@ -1,0 +1,36 @@
+.para{
+    max-width: 200px;
+    font-size: 20px;
+    color: #323f4b;
+}
+.color{
+    background-color: aquamarine;
+}
+.bgcolor{    
+    
+    background-color: #3ebd93;
+    width: 100px;
+    height: 100px;
+}
+.bgcolor1{
+    background-color: #e668a7;
+    width: 100px;
+    height: 100px;
+}
+.bgcolor2{
+    background-color: #a368fc;
+    width: 100px;
+    height: 100px;
+}
+.bgcolor3{
+    background-color:#e12d3919;
+}
+.btn1{
+    width: 150px;
+    height: 50px;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+}
+

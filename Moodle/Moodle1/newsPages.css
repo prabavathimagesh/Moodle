@@ -1,0 +1,18 @@
+body{
+    background-image: url(' https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/newsbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contents{
+    height: 100vh;
+}
+.para{
+    color: #7b8794;
+}
+.head{
+    color:#323f4b;
+    font-family: Roboto;
+}
+.button{
+    color:#ffffff ;
+}
