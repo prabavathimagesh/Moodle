@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<style>
+    .container_1{
+        width: 280px;
+        height: 350px;
+        background-color: black;
+    }
+    .input{
+        background-color: rgb(236, 13, 87);
+    }
+    .btn{
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px whitesmoke;
+    }
+    .bg{
+        color: azure;
+    }
+    .h1{
+        text-transform: uppercase;
+       
+      
+    }
+</style>
+<body>
+    <h1 id="h1">Calculator</h1>
+
+    <div class="d-flex justify-content-center mt-5">
+        <div class="container_1 p-2">
+            <div class="d-flex justify-content-center">
+                <input type="text" id="para" class="p-3 input">
+            </div>
+            <hr class="bg">
+
+            <div class="m-2 d-flex gap-1 ">
+                <button type="button" class="btn text-light btn-danger px-4" onclick="onChange('AC')">AC</button>
+                <button type="button" class="btn  text-light btn-success px-3" onclick="change('+/-')">+/-</button>
+                <button type="button" class="btn  text-light btn-success px-3" onclick="change('%')">%</button>
+                <button type="button" class="btn  text-light btn-success px-4" onclick="change('/')">/</button>
+            </div>
+            <div class="m-2 d-flex gap-1">
+                <button type="button" class="btn  text-light  btn-secondary px-4" onclick="change('7')">7</button>
+                <button type="button" class="btn  text-light  btn-secondary px-4 " onclick="change('8')">8</button>
+                <button type="button" class="btn  text-light  btn-secondary px-4" onclick="change('9')">9</button>
+                <button type="button" class="btn  text-light  btn-primary px-4" onclick="change('*')">*</button>
+            </div>
+            <div class="m-2">
+                <button type="button" class="btn  text-light  btn-secondary  px-4" onclick="change('4')">4</button>
+                <button type="button" class="btn  text-light  btn-secondary  px-4" onclick="change('5')">5</button>
+                <button type="button" class="btn  text-light  btn-secondary  px-4" onclick="change('6')">6</button>
+                <button type="button" class="btn  text-light  btn-primary  px-4" onclick="change('-')">-</button>
+            </div>
+            <div class="m-2">
+                <button type="button" class="btn  text-light  btn-secondary  px-4" onclick="change('1')">1</button>
+                <button type="button" class="btn  text-light  btn-secondary  px-4" onclick="change('2')">2</button>
+                <button type="button" class="btn  text-light  btn-secondary  px-4" onclick="change('3')">3</button>
+                <button type="button" class="btn  text-light  btn-primary  px-3" onclick="change('+')">+</button>
+            </div>
+            <div class="m-2">
+                <button type="button" class="btn  text-light  btn-secondary  px-5" onclick="change('0')">0</button>
+                <button type="button" class="btn  text-light  btn-primary  px-4" onclick="change('.')">.</button>
+                <button type="button" class="btn  text-light  btn-warning g-4  px-4" onclick="changeEvent('=')">=</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let value = 0
+        // functiuon for input text in onclick button
+       let change=(value) =>{   
+        document.getElementById("para").value += value;
+
+      }
+     //function AC clear
+      let onChange=() =>{
+        document.getElementById("para").value = " "
+      }
+
+      let changeEvent=() =>{
+        let result=document.getElementById("para").value
+        document.getElementById("para").value=eval(result)
+
+      }
+    </script>
+    
+</body>
+</html>
